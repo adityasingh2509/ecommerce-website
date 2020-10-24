@@ -1,6 +1,22 @@
+/*****General CSS*****/
 *{
   margin: 0;
   padding: 0;
+}
+/*****End of General CSS*****/
+
+
+/*****HEADER*****/
+
+/***NAVBAR***/
+
+nav{
+  background-color: white;
+}
+
+/*BRAND lOGO*/
+a.navbar-brand {  
+  color: #ffcdb2 !important;
 }
 
 .logo{
@@ -17,11 +33,9 @@
    border-radius: 10px/30px;
    border-radius: 30px/10px;
 }
+/*END OF BRAND lOGO*/
 
-a.navbar-brand {
-  color: #ffcdb2 !important;
-}
-
+/*NAVIGATION LIST ITEMS*/
 a.nav-link{
   color: #262626 !important;
 }
@@ -34,9 +48,14 @@ a.nav-link:hover{
   color: #ffb4a2 !important;
 }
 
-nav{
-  background-color: white;
+.navbar-collapse ul li{
+  font-size: 1.2em;
 }
+
+.navbar-collapse ul li span[class~=badge-pill]{
+  font-size: 0.6em;
+}
+/*END OF NAVIGATION LIST ITEMS*/
 
 /*TOGGLER ANIMATION */
 .navbar-toggler{
@@ -55,16 +74,15 @@ nav{
   margin-top: 4px;
 }
 
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
+.navbar-toggler,.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
-.icon-bar:first-of-type {margin-top: 0;}
+.icon-bar:first-of-type{
+  margin-top: 0;
+}
 
 .navbar-toggler .top-bar {
   transform: translate(3px) rotate(45deg);
@@ -91,36 +109,33 @@ nav{
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
+/*END OF TOGGLER ANIMATION */
 
-.navbar-collapse ul li{
-  font-size: 1.2em;
-}
-
-.navbar-collapse ul li span[class~=badge-pill]{
-  font-size: 0.6em;
-}
-
+/*NAVBAR RIGHT SIDE ITEMS*/
 .navbar-form{
   border: 1px solid #ced4da;
   border-radius: 5px;
 }
 
-#form-button:hover{
+#form-button:hover{ /*SEARCH ICON HOVER*/
   background-color: #d9d9d9;
 }
 
-/* stop the glowing blue shadow */
-.add-on .form-control:focus {
+.add-on .form-control:focus { /*PREVENT BOOTSTRAP BLUE SHADOW*/
  box-shadow:none;
  -webkit-box-shadow:none; 
  border-color: #cccccc; 
 }
 
-.nav-button{
+.nav-button{ /*CART AND USER ICON*/
   font-size: 1.7em;
   color: #262626;
 }
+/*END OF NAVBAR RIGHT SIDE ITEMS*/
 
+/***END OF NAVBAR***/
+
+/***JUMBOTRON***/
 .jumbotron {
   background-image: url("../images/contactUs-banner-sm.jpg");
   background-size: 100% 100%;
@@ -128,6 +143,9 @@ nav{
   height: 60vh;
 }
 
-.nav-button-jmb{
+.nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
   color: white;
 }
+/***END OF JUMBOTRON***/
+
+/*****END OF HEADER*****/
