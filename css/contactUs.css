@@ -38,6 +38,60 @@ nav{
   background-color: white;
 }
 
+/*TOGGLER ANIMATION */
+.navbar-toggler{
+  margin: 1vh 0;
+  padding: 3%;
+  border: none;
+  background: transparent !important;
+}
+
+.icon-bar {
+  width: 30px; 
+  height: 4px;
+  background-color: #ffb4a2;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.icon-bar:first-of-type {margin-top: 0;}
+
+.navbar-toggler .top-bar {
+  transform: translate(3px) rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: translate(3px) rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
 .navbar-collapse ul li{
   font-size: 1.2em;
 }
