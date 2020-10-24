@@ -13,6 +13,6 @@ Made With:
 
 ---
 
-## Last Update : 11<sup>th</sup> October, 2020
+## Last Update : 24<sup>th</sup> October, 2020
 
 ### Website Under Construction
