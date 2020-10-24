@@ -1,0 +1,60 @@
+.logo{
+  font-family: 'Delius Unicase', cursive;
+  padding: 1.5%;
+  border: solid 3px #6d6875;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  background-color: #707568;
+}
+
+.logo-xs{
+  font-family: 'Vampiro One', cursive;
+  font-size: 1.7rem;
+   border-radius: 10px/30px;
+   border-radius: 30px/10px;
+}
+
+a.navbar-brand {
+  color: #ffcdb2 !important;
+}
+
+a.nav-link{
+  color: #262626 !important;
+}
+
+a.nav-link:hover{
+  color: #ff1a1a !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #ffb4a2 !important;
+}
+
+.navbar-collapse ul li{
+  font-size: 1.2em;
+}
+
+.navbar-collapse ul li span[class~=badge-pill]{
+  font-size: 0.6em;
+}
+
+.navbar-form{
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+#form-button:hover{
+  background-color: #d9d9d9;
+}
+
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color: #cccccc; 
+}
+
+.nav-button{
+  font-size: 1.7em;
+  color: #262626;
+}
+
