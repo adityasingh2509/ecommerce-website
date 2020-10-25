@@ -208,6 +208,58 @@ a.nav-link:hover{
 }
 /**END OF MEDIA OBJECT**/
 
+/****FOOTER****/
+.footer{
+  background-color: #fff;
+  color: #868c98;
+}
+
+.footer img{
+  margin-top: 7vh;
+  height: 80px;
+  width: 180px;
+}
+
+.footer p{
+  margin-top: 5vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h5.footer-heading{
+  font-family: 'Delius Unicase', cursive;
+  margin-top: 9vh;
+  margin-bottom: 5vh;
+}
+
+ul.footer-links li{
+  font-family: 'Roboto', cursive;
+  font-weight: 300;
+  padding-bottom: 2vh;
+  transition: all 0.3s ease-out 0s;
+}
+
+ul.footer-links li:hover{
+  color: #ff1a1a;
+  margin-left: 10px;
+}
+
+.footer-copyright p{
+  font-family: 'Roboto', cursive;
+  font-weight: 900;
+  font-style: unset;
+}
+
+.ext-links a{
+  color: #e5989b;
+  text-decoration: none;
+  font-size: 2rem;
+  height: 10px;
+  padding-top: 0px 0px;
+}
+/****END OF FOOTER****/
+
 @media (min-width: 992px){
   .media{
     margin-top: 1.5vh;
