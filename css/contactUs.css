@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-color: #f9faf8;
+}
+
+.container{
+  overflow: auto;
+  padding-bottom: 10vh;
+}
 /*****End of General CSS*****/
 
 
@@ -112,12 +121,16 @@ a.nav-link:hover{
 /*END OF TOGGLER ANIMATION */
 
 /*NAVBAR RIGHT SIDE ITEMS*/
+#srch-item{
+  border: none;
+}
+
 .navbar-form{
   border: 1px solid #ced4da;
   border-radius: 5px;
 }
 
-#form-button:hover{ /*SEARCH ICON HOVER*/
+#navbarSearch-button:hover{ /*SEARCH ICON HOVER*/
   background-color: #d9d9d9;
 }
 
@@ -150,18 +163,58 @@ a.nav-link:hover{
 
 /*****END OF HEADER*****/
 
-/*MAP
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:50%;
-    position:relative;
-    height:0;
+
+/****MAIN****/
+
+/**FORM**/
+.shadow-effect{
+  -webkit-box-shadow: 0 8px 6px -6px #777;
+  -moz-box-shadow: 0 8px 6px -6px #777;
+  box-shadow: 0 8px 6px -6px #777;
+}
+/**END OF FORM**/
+
+/**MEDIA OBJECT**/
+.media{
+  background-color: #fff;
 }
 
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}*/
+.media-body h4{
+  font-size: 20px;
+  text-align: center;
+}
+
+.media-body p{
+  font-size: 14px;
+  text-align: center;
+}
+
+.media-body .card img{
+  height: 120px;
+}
+
+.media-body .card-body h5{
+  font-size: 16px;
+  text-align: center;
+}
+
+.media-body .card-body p{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.media-body .card-footer{
+  text-align: center;
+}
+/**END OF MEDIA OBJECT**/
+
+@media (min-width: 992px){
+  .media{
+    margin-top: 1.5vh;
+    margin-left: 5vh;
+  }
+
+  .media-body .card img{
+    height: 70px;
+  }
+}

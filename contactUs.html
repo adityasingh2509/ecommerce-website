@@ -22,18 +22,24 @@
   <link rel="stylesheet" href="css/contactUs.css">
 </head>
 
-  <body style="background-color: #f9faf8;">
+  <body>
     <header>
+      <!-- Start of Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top p-2">
+        <!-- Logo for Large and above Viewport -->
         <a class="navbar-brand logo d-none d-lg-block" href="./index.html">Watch-It!</a>
+        <!-- Logo for all other viewports -->
         <a class="navbar-brand logo logo-xs d-lg-none p-2" href="./index.html">W</a>
 
+        <!-- Hamburger Icon for smaller viewports -->
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- 3 Span classes instead of single icon for cross animation of Hamburger icon -->
           <span class="icon-bar top-bar"></span>
           <span class="icon-bar middle-bar"></span>
           <span class="icon-bar bottom-bar"></span> 
         </button>
 
+        <!-- Navigation List -->
         <div class="collapse navbar-collapse offset-lg-2 pl-lg-5" id="navbarToggler">
           <ul class="navbar-nav mt-2">
             <li class="nav-item pr-3">
@@ -54,26 +60,30 @@
           </ul>
         </div>
 
+        <!-- Search Bar -->
         <div class="d-none d-lg-block mr-4">
           <form class="navbar-form" role="search">
             <div class="input-group add-on">
-              <input class="form-control border-top-0 border-left-0 border-bottom-0" placeholder="Search" name="srch-item" id="srch-item" type="text">
-              <div class="input-group-btn" id="form-button">
-                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+              <input class="form-control align-self-center" placeholder="Search" name="srch-item" id="srch-item" type="text">
+              <div class="input-group-append">
+                <button class="btn btn-lg input-group-btn border-left" id="navbarSearch-button"><i class="fa fa-search"></i></span>
               </div>
             </div>
           </form>
         </div>
 
+        <!-- Login & Cart -->
         <span class="mr-4 d-none d-lg-block">
           <a href="./login.html" class="btn" ><i class="fa fa-user-circle-o nav-button"></i></a>
           <a href="./cart.html" class="btn" ><i class=" fa fa-opencart nav-button"></i></a>
         </span>
       </nav>
 
+      <!-- Jumbotron -->
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <div class="row d-lg-none ">
+          <!-- Displaying Navbar Icons on XS-Screen -->
+          <div class="row d-lg-none">
             <div class="col-8">
               <form class="navbar-form" role="search">
                 <div class="input-group add-on">
@@ -93,14 +103,8 @@
       </div>
     </header>
 
-    <!-- <div class="container-fluid col-10 justify-content-center">
-      <a href="https://goo.gl/maps/Px7VneRbvfMCSawg6" target="_blank">
-        <div class="map-responsive">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.1188716209704!2d77.23883161515847!3d28.656159182408423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfce26ec085ef%3A0x441e32f4fa5002fb!2sRed%20Fort!5e0!3m2!1sen!2s!4v1603542908214!5m2!1sen!2s" width="100%" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-      </a>
-    </div> -->
-    <div class="container" style="padding-bottom: 250px;overflow: auto;">
+    <!-- Start of Main Content -->
+    <div class="container">
       <div class="col-12 col-lg-5 pl-0 float-left">
         <div class="row pt-5">
           <div class="col-12">
@@ -108,10 +112,12 @@
             <p>For all enquiries please email us using the form below.</p>
           </div>
         </div>
+
+        <!-- Start of Form -->
         <form class="needs-validation" novalidate>
           <div class="form-group form-row pl-3">
             <div class="col-12 pl-0">
-              <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Full Name" required>
+              <input type="text" class="form-control shadow-effect" id="customer_name" name="customer_name" placeholder="Full Name" required>
               <div class="valid-tooltip">
                 Looks Good!
               </div>
@@ -122,7 +128,7 @@
           </div>
           <div class="form-group form-row pl-3">
             <div class="col-12 pl-0">
-              <input type="email" class="form-control" id="customer_email" name="customer_email" placeholder="Email" required>
+              <input type="email" class="form-control shadow-effect" id="customer_email" name="customer_email" placeholder="Email" required>
               <div class="valid-tooltip">
                 Looks Good!
               </div>
@@ -133,7 +139,7 @@
           </div>
           <div class="form-group form-row pl-3">
             <div class="col-12 pl-0">
-              <input type="tel" class="form-control" id="customer_mobile" name="customer_mobile" placeholder="Contact No." required>
+              <input type="tel" class="form-control shadow-effect" id="customer_mobile" name="customer_mobile" placeholder="Contact No." required>
               <div class="valid-tooltip">
                 Looks Good!
               </div>
@@ -159,7 +165,7 @@
           </div>
           <div class="form-group form-row pl-3">
             <div class="col-12 pl-0">
-              <textarea class="form-control" id="feedback_msg" name="feedback_msg" rows="6" placeholder="Your Message" required></textarea>
+              <textarea class="form-control shadow-effect" id="feedback_msg" name="feedback_msg" rows="6" placeholder="Your Message" required></textarea>
               <div class="invalid-tooltip pl-3">
                 Want to get in touch?
               </div>
@@ -170,26 +176,72 @@
           <div class="form-row col-12 justify-content-end">
             <i class="fa fa-lock align-self-center pr-1"></i><span><small>We never share your private data.</small></span>
           </div>
-        </form>
-      </div>
+        </form> <!-- End of Form -->
+      </div> <!-- End of Left Side Part -->
 
-
-      <div class="col-12 col-lg-5 float-left pt-5">
-        <div class="media" style="background-color: #fff">
-          <div class="media-body text-center pt-2 pt-lg-3">
-            <h4>Meet our Support Team</h4>
+      <!-- Right Side Part -->
+      <div class="col-12 col-lg-7 float-left pt-5 mt-5">
+        <!-- Media Object Starts -->
+        <div class="media shadow-effect">
+          <div class="media-body pt-2 pt-lg-3">
+            <h4>Meet our brilliant Support Team</h4>
             <p>Live Support available Monday-Friday <br><small>9:00 AM to 6:00 PM</small></p>
             <hr>
-            <div class="row">
-              <div class="card">
-                
+
+            <!-- Cards of Support Team -->
+            <div class="row row-cols-1 row-cols-lg-3 px-3">
+              <div class="col mb-4">
+                <div class="card h-100 pt-2">
+                  <img src="images/avatar.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
+                  <div class="card-body pt-3">
+                    <h5 class="card-title">Sheldon Cooper</h5>
+                    <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="card-footer small py-1">
+                    Support Manager
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="col mb-4">
+                <div class="card h-100 pt-2">
+                  <img src="images/avatar.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
+                  <div class="card-body pt-3">
+                    <h5 class="card-title">Joey Tribbiani</h5>
+                    <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="card-footer small py-1">
+                    Support Engineer
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100 pt-2">
+                  <img src="images/avatar.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
+                  <div class="card-body pt-3">
+                    <h5 class="card-title">Barney Stinson</h5>
+                    <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="card-footer small py-1">
+                    Support Engineer
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Support Team Cards -->
+          </div><!-- End of Media Body-->
+        </div><!-- End of Media Object-->
+      </div><!-- End of Right Side Part-->
+    </div><!-- End of Main Content-->
+
+    <!-- Footer Begins -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <
           </div>
         </div>
       </div>
-
-    </div>
+    </footer>
 
 
 
@@ -220,3 +272,17 @@
 
   </body>
 </html>
+
+<!-- <div class="card col-4">
+                  <img src="images/avatar.jpeg" class="card-img-top rounded-circle" height="10px" width="10px" alt="Support Team 1st Member">
+                  <div class="card-body">
+                    <h5 class="card-title">Aditya Singh</h5>
+                    <p class="card-text small ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                  </div>
+                  <div class="card-footer">
+                    Team Lead
+                  </div>
+                </div> -->
