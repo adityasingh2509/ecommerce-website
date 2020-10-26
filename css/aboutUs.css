@@ -1,0 +1,81 @@
+/***JUMBOTRON***/
+header{
+  height: 90vh;
+}
+
+.jumbotron {
+  background-image: url("../images/aboutUs-banner.png");
+  background-size: 100% 100%;
+  margin-top: 12vh;
+  height: 65vh;
+}
+
+.nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
+  color: white;
+}
+
+.head-banner div{
+  display: flex;
+  justify-content: center;
+}
+
+.head-banner h1.head-banner-title{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 4vw;
+  word-spacing: 0.2vw;
+  letter-spacing: 3px;
+  margin-top: 10vh;
+}
+
+.head-banner h1.head-banner-title span{
+  font-family: 'Delius Unicase', cursive;
+  color: #ffb4a2;
+}
+
+.head-banner p.head-banner-p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5vw;
+  color: #ff1a1a;
+}
+/***END OF JUMBOTRON***/
+
+
+/*****MAIN CONTENT****/
+
+/*SECTION CLASS CONTAINER*/
+.section h2 {
+  font-family: 'Grenze Gotisch', cursive;
+  font-weight: 500;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.section h2:before,.section h2:after {
+  border-top: 2px solid #ff1a1a;
+  border-bottom: 2px solid #ff1a1a;
+  content: "";
+  display: inline-block;
+  height: .15em;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+  margin-bottom: .15em;
+}
+
+/*.vision-section h2:after{
+  width: 15%;
+}*/
+
+.section h2:before {
+  right: 0.5em;
+  margin-left: -60%;
+}
+
+.section h2:after {
+  left: 0.5em;
+/* margin-right: -50%; */
+}

@@ -1,20 +1,7 @@
-/*****General CSS*****/
-*{
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  background-color: #f9faf8;
-}
-
-.container,.container-fluid{
-  overflow: auto;
-}
-/*****End of General CSS*****/
-
 
 /*****HEADER*****/
+
+
 
 /***JUMBOTRON***/
 .jumbotron {
@@ -80,6 +67,18 @@ body{
 
 /****MEDIA QUERIES*****/
 @media (min-width: 992px){
+  nav{
+    height: 8vw;
+  }
+  
+  header{
+    height: 85vh;
+  }
+
+  .jumbotron{
+    height: 65vh;
+  }
+
   .media{
     margin-top: 1.5vh;
     margin-left: 5vh;

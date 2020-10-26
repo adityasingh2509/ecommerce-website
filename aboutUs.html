@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vampiro+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/navbar-footer.css">
@@ -40,13 +42,13 @@
           </button>
 
           <!-- Navigation List -->
-          <div class="collapse navbar-collapse offset-lg-2 pl-lg-5" id="navbarToggler">
+          <div class="collapse navbar-collapse offset-lg-1 pl-lg-5" id="navbarToggler">
             <ul class="navbar-nav mt-2">
               <li class="nav-item pr-3">
                 <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item pr-3">
-                <a class="nav-link" href="./shop.html">Shop<span class="badge badge-pill badge-danger align-top">HOT</span></a>
+                <a class="nav-link" href="./shop.html">Shop<span class="badge badge-pill badge-danger align-top shadow-effect">HOT</span></a>
               </li>
               <li class="nav-item pr-3 active">
                 <a class="nav-link" href="./aboutUs.html">About Us<span class="sr-only">(current)</span></a>
@@ -79,8 +81,41 @@
           </span>
         </div>
       </nav>
-    </header>
 
+      <!-- Jumbotron -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <!-- Displaying Navbar Icons on XS-Screen -->
+          <div class="row d-lg-none">
+            <div class="col-8">
+              <form class="navbar-form" role="search">
+                <div class="input-group add-on">
+                  <input class="form-control border-0 border-right" placeholder="Search" name="srch-item" id="srch-item" type="text">
+                  <div class="input-group-btn" id="form-button">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <span class="pl-3">
+                <a href="./login.html" class="btn" ><i class="fa fa-user nav-button nav-button-jmb"></i></a>
+                <a href="./cart.html" class="btn btn-lg" ><i class="fa fa-shopping-cart nav-button-jmb"></i></a>
+            </span>
+          </div>
+
+          <div class="row head-banner">
+            <div class="col-12">
+              <h1 class="head-banner-title">The <span>Watch-It!</span> Story</h1>
+            </div>
+            <div class="col-12">
+              <p class="head-banner-p py-4">Time with Perfection!</p>
+            </div>
+          </div>
+
+        </div><!-- End of Container -->
+      </div> <!-- End of Jumbotron -->
+
+    </header>
 
 
 

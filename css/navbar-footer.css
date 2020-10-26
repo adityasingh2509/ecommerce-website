@@ -1,4 +1,4 @@
-/*****General CSS*****/
+****General CSS*****/
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +10,12 @@ body{
 
 .container,.container-fluid{
   overflow: auto;
+}
+
+.shadow-effect{
+  -webkit-box-shadow: 0 8px 6px -6px #777;
+  -moz-box-shadow: 0 8px 6px -6px #777;
+  box-shadow: 0 8px 6px -6px #777;
 }
 /*****End of General CSS*****/
 
@@ -198,3 +204,12 @@ ul.footer-links a li:hover{
   font-style: unset;
 }
 /****END OF FOOTER****/
+
+
+/***MEDIA QUERIES***/
+
+@media screen and (min-width: 992px){
+  .navbar-nav{
+    padding-left: 5vw;
+  }
+}
