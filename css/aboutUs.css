@@ -70,10 +70,6 @@ main{
   margin-bottom: .15em;
 }
 
-/*.vision-section h2:after{
-  width: 15%;
-}*/
-
 .section h2.lg-screen:before {
   right: 0.5em;
   margin-left: -60%;
@@ -101,5 +97,12 @@ main{
   .head-banner p.head-banner-p{
     font-size: 5vw;
     color: #ff1a1a;
+  }
+}
+
+@media screen and (min-width: 992px){
+
+  .vision-section h2.section-title{
+    margin-left: -1vw;
   }
 }
