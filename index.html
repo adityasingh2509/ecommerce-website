@@ -13,16 +13,18 @@
   <!-- Open Source CSS Libraries -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/libs/animate.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vampiro+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/navbar-footer.css">
-  <link rel="stylesheet" href="css/contactUs.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
   <body>
-    <header>
+    <header class="pb-5">
       <!-- Start of Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
@@ -43,7 +45,7 @@
           <div class="collapse navbar-collapse offset-lg-1 pl-lg-5" id="navbarToggler">
             <ul class="navbar-nav mt-2">
               <li class="nav-item pr-3 active">
-                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item pr-3">
                 <a class="nav-link" href="./shop.html">Shop<span class="badge badge-pill badge-danger align-top shadow-effect">HOT</span></a>
@@ -79,68 +81,41 @@
           </span>
         </div>
       </nav>
-
-      
     </header>
 
     <!-- Start of Main Content -->
     <main>
-    </main> <!-- End of Main Content-->
-
-    <!-- Footer Begins -->
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-3 offset-lg-1 align-self-center" id="brand-footer">
-            <div class="text-center">
-              <a href="#"><img src="images/logo.png" alt="Brand Logo"></a>
-              <p class="col-12 col-lg-10">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
-            </div>
+      <div class="container-fluid main-content">
+        <div class="col-12 col-lg-8 float-lg-left">
+          <div class="row tagline offset-lg-1">
+            <h1 id="h-1" class="wow fadeInLeft shadow-effect" data-wow-duration="1.5s">For People <br>Who Do Not Go With The Times</h1>
+            <p id="p-1" class="wow fadeInDown col-lg-9" data-wow-delay="1s" data-wow-duration="1.5s">
+              Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </div>
-          <div class="col-12 col-lg-2 mx-2">
-            <h5 class="footer-heading">Quick Links</h5>
-            <ul class="list-unstyled footer-links">
-              <a href="./aboutUs.html"><li>About Us</li></a>
-              <a href="#"><li>Offers & Discounts</li></a>
-              <a href="#"><li>Get Coupon</li></a>
-              <a href="./contactUs.html"><li>Contact Us</li></a>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-2 mx-2">
-            <h5 class="footer-heading">New Launches</h5>
-            <ul class="list-unstyled footer-links">
-              <a href="#"><li>Mens' Italian Design</li></a>
-              <a href="#"><li>Womens' Luxury</li></a>
-              <a href="#"><li>Unisex Sports</li></a>
-              <a href="#"><li>Swiss Quartz</li></a>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-2 mx-2">
-            <h5 class="footer-heading">Support</h5>
-            <ul class="list-unstyled footer-links">
-              <a href="#"><li>Frequently Asked Questions</li></a>
-              <a href="#"><li>Terms & Conditions</li></a>
-              <a href="#"><li>Privacy Policy</li></a>
-              <a href="#"><li>Payment Related Issues</li></a>
-            </ul>
+          <div class="row shop-btn offset-lg-1 wow fadeInDownBig">
+              <a href="#" class="btn btn-white btn-animate">Shop Now</a>
           </div>
         </div>
-
-        <!-- Copyright -->
-        <div class="row footer-copyright justify-content-around">
-          <div class="col-auto">
-            <p>&copy; 2020 Aditya Singh</p>
-          </div>
-        </div> <!-- End of Copyright -->
-
+        <div id="watch-image" class="col-lg-3 d-none d-lg-block float-lg-left wow fadeInRight" data-wow-duration="1.5s">
+          <img src="images/watch.png">
+        </div>
       </div>
-    </footer> <!-- End of Footer -->
+    </main> <!-- End of Main Content-->
 
 
 
 
 
 
+
+    <!-- Animation CDN's -->
+    <script src="js/libs/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <!-- Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript">
