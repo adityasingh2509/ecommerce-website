@@ -6,12 +6,12 @@ header{
 .jumbotron {
   background-image: url("../images/aboutUs-banner.png");
   background-size: 100% 100%;
-  margin-top: 12vh;
+  margin-top: 10vh;
   height: 65vh;
 }
 
 .nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
-  color: white;
+  color: #ff1a1a;
 }
 
 .head-banner div{
@@ -25,7 +25,7 @@ header{
   font-size: 4vw;
   word-spacing: 0.2vw;
   letter-spacing: 3px;
-  margin-top: 10vh;
+  margin-top: 18vh;
 }
 
 .head-banner h1.head-banner-title span{
@@ -45,6 +45,10 @@ header{
 
 /*****MAIN CONTENT****/
 
+main{
+  padding-bottom: 12vh;
+}
+
 /*SECTION CLASS CONTAINER*/
 .section h2 {
   font-family: 'Grenze Gotisch', cursive;
@@ -54,7 +58,7 @@ header{
   font-size: 2.5em;
 }
 
-.section h2:before,.section h2:after {
+.section h2.lg-screen:before,.section h2.lg-screen:after {
   border-top: 2px solid #ff1a1a;
   border-bottom: 2px solid #ff1a1a;
   content: "";
@@ -70,12 +74,32 @@ header{
   width: 15%;
 }*/
 
-.section h2:before {
+.section h2.lg-screen:before {
   right: 0.5em;
   margin-left: -60%;
 }
 
-.section h2:after {
+.section h2.lg-screen:after {
   left: 0.5em;
 /* margin-right: -50%; */
+}
+
+
+
+/****MEDIA QUERIES*****/
+
+@media screen and (max-width: 991px){
+
+  .head-banner h1.head-banner-title{
+    font-size: 8vw;
+    word-spacing: 0.5vw;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+    margin-top: 10vh;
+  }
+
+  .head-banner p.head-banner-p{
+    font-size: 5vw;
+    color: #ff1a1a;
+  }
 }

@@ -95,143 +95,152 @@
                 </div>
               </form>
             </div>
-            <span class="pl-3">
-                <a href="./login.html" class="btn" ><i class="fa fa-user nav-button nav-button-jmb"></i></a>
-                <a href="./cart.html" class="btn btn-lg" ><i class="fa fa-shopping-cart nav-button-jmb"></i></a>
-            </span>
+            <div class="col-2">
+              <span>
+                  <a href="./login.html" class="btn" ><i class="fa fa-user nav-button nav-button-jmb"></i></a>
+              </span>
+            </div>
+            <div class="col-2">
+              <span>
+                  <a href="./cart.html" class="btn btn-lg mr-1" ><i class="fa fa-shopping-cart nav-button-jmb"></i></a>
+              </span>
+            </div>
           </div>
         </div>
       </div> <!-- End of Jumbotron -->
     </header>
 
     <!-- Start of Main Content -->
-    <div class="container pb-5">
-      <div class="col-12 col-lg-5 pl-0 float-left">
-        <div class="row pt-5">
-          <div class="col-12">
-            <h3>Get in Touch</h3>
-            <p>For all enquiries please email us using the form below.</p>
-          </div>
-        </div>
-
-        <!-- Start of Form -->
-        <form class="needs-validation" novalidate>
-          <div class="form-group form-row pl-3">
-            <div class="col-12 pl-0">
-              <input type="text" class="form-control shadow-effect" id="customer_name" name="customer_name" placeholder="Full Name" required>
-              <div class="valid-tooltip">
-                Looks Good!
-              </div>
-              <div class="invalid-tooltip">
-                Oops! Please provide a valid name.
-              </div>
-            </div>
-          </div>
-          <div class="form-group form-row pl-3">
-            <div class="col-12 pl-0">
-              <input type="email" class="form-control shadow-effect" id="customer_email" name="customer_email" placeholder="Email" required>
-              <div class="valid-tooltip">
-                Looks Good!
-              </div>
-              <div class="invalid-tooltip">
-                Oops! Please provide a valid Email address.
-              </div>
-            </div>
-          </div>
-          <div class="form-group form-row pl-3">
-            <div class="col-12 pl-0">
-              <input type="tel" class="form-control shadow-effect" id="customer_mobile" name="customer_mobile" placeholder="Contact No." required>
-              <div class="valid-tooltip">
-                Looks Good!
-              </div>
-              <div class="invalid-tooltip">
-                Oops! Please provide a valid contact number.
-              </div>
-            </div>
-          </div>
-          <div class="form-group pl-1">
-            <label for="isExistingCustomer" class="col-12 pl-2">
-              Are you an existing customer?
-            </label>
-            <div class="form-row form-check pl-3 form-check-inline">
-              <div>
-                <input class="form-check-input" type="radio" name="options" id="inlineRadioOption1" value="yes" checked>
-                <label class="form-check-label" for="inlineRadioOption1">Yes</label>
-              </div>
-            </div>
-            <div class="form-row form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="options" id="inlineRadioOption2" value="no">
-              <label class="form-check-label" for="inlineRadioOption2">No</label>
-            </div>
-          </div>
-          <div class="form-group form-row pl-3">
-            <div class="col-12 pl-0">
-              <textarea class="form-control shadow-effect" id="feedback_msg" name="feedback_msg" rows="6" placeholder="Your Message" required></textarea>
-              <div class="invalid-tooltip pl-3">
-                Want to get in touch?
-              </div>
+    <main>
+      <div class="container">
+        <!-- Left Side Part -->
+        <div class="col-12 col-lg-5 pl-0 float-left">
+          <div class="row pt-5">
+            <div class="col-12">
+              <h3>Get in Touch</h3>
+              <p>For all enquiries please email us using the form below.</p>
             </div>
           </div>
 
-          <button class="btn btn-lg btn-primary px-4 mr-4 float-right rounded-pill " type="submit">SEND IT</button>
-          <div class="form-row col-12 justify-content-end">
-            <i class="fa fa-lock align-self-center pr-1"></i><span><small>We never share your private data.</small></span>
-          </div>
-        </form> <!-- End of Form -->
-      </div> <!-- End of Left Side Part -->
-
-      <!-- Right Side Part -->
-      <div class="col-12 col-lg-7 float-left pt-5 mt-5">
-        <!-- Media Object Starts -->
-        <div class="media shadow-effect">
-          <div class="media-body pt-2 pt-lg-3">
-            <h4>Meet our brilliant Support Team</h4>
-            <p>Live Support available Monday-Friday <br><small class="font-weight-bold">9:00 AM to 6:00 PM</small></p>
-            <hr>
-
-            <!-- Cards of Support Team -->
-            <div class="row row-cols-1 row-cols-lg-3 px-3">
-              <div class="col mb-4">
-                <div class="card h-100 pt-2">
-                  <img src="images/avatar1.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
-                  <div class="card-body pt-3">
-                    <h5 class="card-title">Sheldon Cooper</h5>
-                    <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <div class="card-footer small py-1">
-                    Support Manager
-                  </div>
+          <!-- Start of Form -->
+          <form class="needs-validation" novalidate>
+            <div class="form-group form-row pl-3">
+              <div class="col-12 pl-0">
+                <input type="text" class="form-control shadow-effect" id="customer_name" name="customer_name" placeholder="Full Name" required>
+                <div class="valid-tooltip">
+                  Looks Good!
+                </div>
+                <div class="invalid-tooltip">
+                  Oops! Please provide a valid name.
                 </div>
               </div>
-              <div class="col mb-4">
-                <div class="card h-100 pt-2">
-                  <img src="images/avatar2.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
-                  <div class="card-body pt-3">
-                    <h5 class="card-title">Joey Tribbiani</h5>
-                    <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <div class="card-footer small py-1">
-                    Support Engineer
-                  </div>
+            </div>
+            <div class="form-group form-row pl-3">
+              <div class="col-12 pl-0">
+                <input type="email" class="form-control shadow-effect" id="customer_email" name="customer_email" placeholder="Email" required>
+                <div class="valid-tooltip">
+                  Looks Good!
+                </div>
+                <div class="invalid-tooltip">
+                  Oops! Please provide a valid Email address.
                 </div>
               </div>
-              <div class="col mb-4">
-                <div class="card h-100 pt-2">
-                  <img src="images/avatar3.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
-                  <div class="card-body pt-3">
-                    <h5 class="card-title">Barney Stinson</h5>
-                    <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <div class="card-footer small py-1">
-                    Support Engineer
-                  </div>
+            </div>
+            <div class="form-group form-row pl-3">
+              <div class="col-12 pl-0">
+                <input type="tel" class="form-control shadow-effect" id="customer_mobile" name="customer_mobile" placeholder="Contact No." required>
+                <div class="valid-tooltip">
+                  Looks Good!
+                </div>
+                <div class="invalid-tooltip">
+                  Oops! Please provide a valid contact number.
                 </div>
               </div>
-            </div><!-- End of Support Team Cards -->
-          </div><!-- End of Media Body-->
-        </div><!-- End of Media Object-->
-      </div><!-- End of Right Side Part-->
-    </div><!-- End of Main Content-->
+            </div>
+            <div class="form-group pl-1">
+              <label for="isExistingCustomer" class="col-12 pl-2">
+                Are you an existing customer?
+              </label>
+              <div class="form-row form-check pl-3 form-check-inline">
+                <div>
+                  <input class="form-check-input" type="radio" name="options" id="inlineRadioOption1" value="yes" checked>
+                  <label class="form-check-label" for="inlineRadioOption1">Yes</label>
+                </div>
+              </div>
+              <div class="form-row form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="options" id="inlineRadioOption2" value="no">
+                <label class="form-check-label" for="inlineRadioOption2">No</label>
+              </div>
+            </div>
+            <div class="form-group form-row pl-3">
+              <div class="col-12 pl-0">
+                <textarea class="form-control shadow-effect" id="feedback_msg" name="feedback_msg" rows="6" placeholder="Your Message" required></textarea>
+                <div class="invalid-tooltip pl-3">
+                  Want to get in touch?
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-lg btn-primary px-4 mr-4 float-right rounded-pill " type="submit">SEND IT</button>
+            <div class="form-row col-12 justify-content-end">
+              <i class="fa fa-lock align-self-center pr-1"></i><span><small>We never share your private data.</small></span>
+            </div>
+          </form> <!-- End of Form -->
+        </div> <!-- End of Left Side Part -->
+
+        <!-- Right Side Part -->
+        <div class="col-12 col-lg-7 float-left pt-5 mt-5">
+          <!-- Media Object Starts -->
+          <div class="media shadow-effect">
+            <div class="media-body pt-2 pt-lg-3">
+              <h4>Meet our brilliant Support Team</h4>
+              <p>Live Support available Monday-Friday <br><small class="font-weight-bold">9:00 AM to 6:00 PM</small></p>
+              <hr>
+
+              <!-- Cards of Support Team -->
+              <div class="row row-cols-1 row-cols-lg-3 px-3">
+                <div class="col mb-4">
+                  <div class="card h-100 pt-2">
+                    <img src="images/avatar1.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
+                    <div class="card-body pt-3">
+                      <h5 class="card-title">Sheldon Cooper</h5>
+                      <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="card-footer small py-1">
+                      Support Manager
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card h-100 pt-2">
+                    <img src="images/avatar2.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
+                    <div class="card-body pt-3">
+                      <h5 class="card-title">Joey Tribbiani</h5>
+                      <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="card-footer small py-1">
+                      Support Engineer
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card h-100 pt-2">
+                    <img src="images/avatar3.jpeg" class="card-img-top rounded-circle px-5 pt-0" alt="Team member image">
+                    <div class="card-body pt-3">
+                      <h5 class="card-title">Barney Stinson</h5>
+                      <p class="card-text">Lorem consetur elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="card-footer small py-1">
+                      Support Engineer
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End of Support Team Cards -->
+            </div><!-- End of Media Body-->
+          </div><!-- End of Media Object-->
+        </div><!-- End of Right Side Part-->
+      </div>
+    </main> <!-- End of Main Content-->
 
     <!-- Footer Begins -->
     <footer class="footer">
@@ -315,7 +324,6 @@
         var width = $(window).width();
         if (width > 992){
           $('#brand-footer div').removeClass("text-center");
-          $('#brand-footer').removeClass("");
         }
       });
     </script>

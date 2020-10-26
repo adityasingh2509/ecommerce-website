@@ -7,7 +7,7 @@
 .jumbotron {
   background-image: url("../images/contactUs-banner-sm.jpg");
   background-size: 100% 100%;
-  margin-top: 12vh;
+  margin-top: 10vh;
   height: 60vh;
 }
 
@@ -20,6 +20,9 @@
 
 
 /****MAIN****/
+main{
+  padding-bottom: 20vh;
+}
 
 /**FORM**/
 .shadow-effect{
@@ -70,7 +73,7 @@
   nav{
     height: 8vw;
   }
-  
+
   header{
     height: 85vh;
   }

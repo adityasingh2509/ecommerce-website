@@ -83,11 +83,11 @@
       </nav>
 
       <!-- Jumbotron -->
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid" >
         <div class="container">
           <!-- Displaying Navbar Icons on XS-Screen -->
           <div class="row d-lg-none">
-            <div class="col-8">
+            <div class="col-7">
               <form class="navbar-form" role="search">
                 <div class="input-group add-on">
                   <input class="form-control border-0 border-right" placeholder="Search" name="srch-item" id="srch-item" type="text">
@@ -97,15 +97,22 @@
                 </div>
               </form>
             </div>
-            <span class="pl-3">
-                <a href="./login.html" class="btn" ><i class="fa fa-user nav-button nav-button-jmb"></i></a>
-                <a href="./cart.html" class="btn btn-lg" ><i class="fa fa-shopping-cart nav-button-jmb"></i></a>
-            </span>
+            <div class="col-2">
+              <span>
+                  <a href="./login.html" class="btn" ><i class="fa fa-user nav-button nav-button-jmb"></i></a>
+              </span>
+            </div>
+            <div class="col-2">
+              <span>
+                  <a href="./cart.html" class="btn btn-lg mr-1" ><i class="fa fa-shopping-cart nav-button-jmb"></i></a>
+              </span>
+            </div>
           </div>
 
           <div class="row head-banner">
             <div class="col-12">
-              <h1 class="head-banner-title">The <span>Watch-It!</span> Story</h1>
+              <h1 class="head-banner-title d-none d-lg-block">The <span>Watch-It!</span> Story</h1>
+              <h1 class="head-banner-title d-lg-none text-center">The <br><span>Watch-It!</span><br> Story</h1>
             </div>
             <div class="col-12">
               <p class="head-banner-p py-4">Time with Perfection!</p>
@@ -122,12 +129,12 @@
         <div class="section mission-section p-0 m-0">
           <div class="row">
             <div class="col-12">
-              <h2>Our Mission</h2>
+              <h2 class="section-title lg-screen">Our Mission</h2>
             </div>
           </div>
 
           <div class="row py-4">
-            <div class="col-12 col-lg-10">
+            <div class="col-11 col-lg-10 mx-auto section-p_graphs">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -143,12 +150,12 @@
         <div class="section vision-section py-4 m-0">
           <div class="row">
             <div class="col-12">
-              <h2>Our Vision</h2>
+              <h2 class="section-title lg-screen">Our Vision</h2>
             </div>
           </div>
 
           <div class="row py-4">
-            <div class="col-12 col-lg-10">
+            <div class="col-11 col-lg-10 mx-auto section-p_graphs">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -218,12 +225,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      // Removing text-center from footer's brand description fort large viewport view
       $(document).ready(function(){
         var width = $(window).width();
+
+        // Removing text-center and mx-auto from footer's brand description and div.section-p_graphs respectively from large viewport view
         if (width > 992){
           $('#brand-footer div').removeClass("text-center");
-          $('#brand-footer').removeClass("");
+          $('div.section-p_graphs').removeClass("mx-auto");
+        }
+
+        // Removing lg-screen  from h2.section for smaller viewports
+        if (width < 768){
+          $('h2.section-title').removeClass("lg-screen");
         }
       });
     </script>
