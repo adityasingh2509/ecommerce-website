@@ -8,9 +8,8 @@ body{
   background-color: #f9faf8;
 }
 
-.container{
+.container,.container-fluid{
   overflow: auto;
-  padding-bottom: 10vh;
 }
 /*****End of General CSS*****/
 
@@ -39,8 +38,8 @@ a.navbar-brand {
 .logo-xs{
   font-family: 'Vampiro One', cursive;
   font-size: 1.7rem;
-   border-radius: 10px/30px;
-   border-radius: 30px/10px;
+  border-radius: 10px/30px;
+  border-radius: 30px/10px;
 }
 /*END OF BRAND lOGO*/
 
@@ -199,6 +198,8 @@ a.nav-link:hover{
 }
 
 .media-body .card-body p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   font-size: 12px;
   text-align: justify;
 }
@@ -233,14 +234,19 @@ h5.footer-heading{
   margin-bottom: 5vh;
 }
 
-ul.footer-links li{
+ul.footer-links a{
+  text-decoration: none;
+  color: #868c98;
+}
+
+ul.footer-links a li{
   font-family: 'Roboto', cursive;
   font-weight: 300;
   padding-bottom: 2vh;
   transition: all 0.3s ease-out 0s;
 }
 
-ul.footer-links li:hover{
+ul.footer-links a li:hover{
   color: #ff1a1a;
   margin-left: 10px;
 }
@@ -249,14 +255,6 @@ ul.footer-links li:hover{
   font-family: 'Roboto', cursive;
   font-weight: 900;
   font-style: unset;
-}
-
-.ext-links a{
-  color: #e5989b;
-  text-decoration: none;
-  font-size: 2rem;
-  height: 10px;
-  padding-top: 0px 0px;
 }
 /****END OF FOOTER****/
 
