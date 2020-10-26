@@ -1,3 +1,19 @@
+/*****General CSS*****/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #f9faf8;
+}
+
+.container,.container-fluid{
+  overflow: auto;
+}
+/*****End of General CSS*****/
+
+
 /*****HEADER*****/
 
 /***NAVBAR***/
