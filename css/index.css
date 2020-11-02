@@ -28,13 +28,13 @@
   animation: scale 3s ease-in-out infinite alternate; 
 }
 
-@-webkit-keyframes scale {
+@keyframes scale {
   0% {
     
   }
   
   100% {
-   -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
