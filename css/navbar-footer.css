@@ -53,10 +53,12 @@ a.navbar-brand {
 /*NAVIGATION LIST ITEMS*/
 a.nav-link{
   color: #262626 !important;
+  transition: all 0.2s;
 }
 
 a.nav-link:hover{
   color: #ff1a1a !important;
+  transform: scale(1.2);
 }
 
 .navbar-light .navbar-nav .active>.nav-link{
@@ -149,6 +151,11 @@ a.nav-link:hover{
 .nav-button{ /*CART AND USER ICON*/
   font-size: 1.7em;
   color: #262626;
+  transition: all 0.2s;
+}
+
+.nav-button:hover{
+  transform: scale(1.2);
 }
 /*END OF NAVBAR RIGHT SIDE ITEMS*/
 

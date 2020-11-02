@@ -112,10 +112,14 @@
 @media screen and (max-width: 991px){
   #h-1{
     font-size: 2em;
-    margin-top: -15vh;
   }
 
   .main-content{
+    padding-top: 20%;
     height: 100vh;
+  }
+
+  .tagline{
+    margin-top: 10vh;
   }
 }
