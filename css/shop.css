@@ -1,0 +1,15 @@
+/***JUMBOTRON***/
+.jumbotron {
+  background-image: url("../images/shop-banner.jpg");
+  background-size: 100% 100%;
+  margin-top: 10vh;
+  height: 60vh;
+}
+
+.nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
+  color: white;
+}
+/***END OF JUMBOTRON***/
+
+/*****END OF HEADER*****/
+
