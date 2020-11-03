@@ -1,15 +1,45 @@
 /***JUMBOTRON***/
+header{
+  height: 90vh;
+}
+
 .jumbotron {
   background-image: url("../images/shop-banner.jpg");
   background-size: 100% 100%;
   margin-top: 10vh;
-  height: 60vh;
+  height: 65vh;
 }
 
 .nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
-  color: white;
+  color: #ff1a1a;
+}
+
+.head-banner{
+  align-items: center;
+  padding-top: 14vh;
+}
+
+.head-brand{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 18vw;
+}
+
+.head-tagline{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head-banner .head-tagline p.head-banner-p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 3rem;
+  color: #102a56;
+  word-spacing: 0.2vw;
+  letter-spacing: 3px;
+  justify-content: flex-end;
+  padding-right: 2vw;
 }
 /***END OF JUMBOTRON***/
-
-/*****END OF HEADER*****/
 

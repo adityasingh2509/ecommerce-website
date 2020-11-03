@@ -1,12 +1,13 @@
-
-/*****HEADER*****/
-
 /***JUMBOTRON***/
+header{
+  height: 90vh;
+}
+
 .jumbotron {
   background-image: url("../images/contactUs-banner-sm.jpg");
   background-size: 100% 100%;
   margin-top: 10vh;
-  height: 60vh;
+  height: 65vh;
 }
 
 .nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
@@ -68,10 +69,6 @@ main{
 
 /****MEDIA QUERIES*****/
 @media (min-width: 992px){
-  nav{
-    height: 8vw;
-  }
-
   header{
     height: 85vh;
   }
