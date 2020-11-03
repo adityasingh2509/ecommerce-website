@@ -13,6 +13,11 @@ header{
 .nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
   color: white;
 }
+
+#form-button button{
+    background-color: #fff;
+    border-left: 1px dashed #ff1a1a;
+  }
 /***END OF JUMBOTRON***/
 
 /*****END OF HEADER*****/

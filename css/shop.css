@@ -1,13 +1,13 @@
 /***JUMBOTRON***/
 header{
-  height: 90vh;
+  height: 70vh;
 }
 
 .jumbotron {
   background-image: url("../images/shop-banner.jpg");
   background-size: 100% 100%;
   margin-top: 10vh;
-  height: 65vh;
+  height: 100%;
 }
 
 .nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
@@ -43,3 +43,59 @@ header{
 }
 /***END OF JUMBOTRON***/
 
+/*****MAIN CONTENT****/
+
+.main-content-tagline{
+  height: 20vh;
+}
+
+.main-content-tagline > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content-tagline > div > h2{
+  font-family: 'Delius Unicase', cursive;
+  font-size: 4rem;
+  color: #ff1a1a;
+  animation: scale 4s ease-in-out infinite alternate; 
+}
+
+@keyframes scale{
+  0%{
+
+  }
+
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+.main-content-tagline > div > a span{
+  margin-left: 5vw;
+  font-size: 5rem;
+  color: #ffcdb2;
+}
+
+#down-scroll .btn{
+  transition: transform 0.3s linear;
+}
+
+#down-scroll .btn:hover{
+  color: #ffcdb2;
+  transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 991px){
+
+  .jumbotron{
+    height: 60vh;
+  }
+
+  #form-button button{
+    background-color: #fff;
+    border-left: 1px dashed #ff1a1a;
+  }
+}

@@ -24,7 +24,6 @@
 
 #watch-image img{
   opacity:1;
-  -webkit-animation: scale 3s ease-in-out infinite alternate;
   animation: scale 3s ease-in-out infinite alternate; 
 }
 
@@ -121,5 +120,14 @@
 
   .tagline{
     margin-top: 10vh;
+  }
+
+  #form-button button{
+    background-color: #fff;
+    border-left: 1px dashed #ff1a1a;
+  }
+
+  .nav-button-jmb{/*CART AND USER ICON FOR XS VIEW*/
+    color: #ff1a1a;
   }
 }
