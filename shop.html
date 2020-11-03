@@ -112,11 +112,12 @@
 
           <!-- Head Banner Text -->
           <div class="row head-banner">
-            <div class="col-12 head-brand">
+            <div class="col-12 head-brand d-none d-lg-block">
               <a class="logo navbar-brand" href="./index.html">Watch-It!</a>
             </div>
             <div class="col-12 head-tagline">
-              <p class="head-banner-p py-4">Style Created with Time!</p>
+              <p class="head-banner-p py-4 d-none d-lg-block">Style Created with Time!</p>
+              <p class="head-banner-p py-4 d-lg-none">Style Created<br/>with Time!</p>
             </div>
           </div>
 
@@ -129,9 +130,12 @@
       <div class="container-fluid main-content">
         <div class="row main-content-tagline">
           <div class="col-12">
-            <!-- <h2 class="wow pulse" data-wow-duration="4s" data-wow-iteration="infinite">More than Just a Watch!</h2> -->
-            <h2>More than Just a Watch!</h2>
-            <a href="#dummy" id="down-scroll"><span class="btn fa fa-arrow-circle-down"></span></a>
+            <h2 class="d-none d-lg-block">More than Just a Watch!</h2>
+            <h2 class="d-lg-none">More than<br>Just a Watch!</h2>
+            <a href="#dummy" class="d-none d-lg-block down-scroll"><span class="btn fa fa-arrow-circle-down"></span></a>
+          </div>
+          <div class="col-12 d-lg-none">
+            <a href="#dummy" class="down-scroll"><span class="btn fa fa-arrow-circle-down"></span></a>
           </div>
         </div>
       </div>

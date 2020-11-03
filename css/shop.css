@@ -78,11 +78,11 @@ header{
   color: #ffcdb2;
 }
 
-#down-scroll .btn{
+.down-scroll .btn{
   transition: transform 0.3s linear;
 }
 
-#down-scroll .btn:hover{
+.down-scroll .btn:hover{
   color: #ffcdb2;
   transform: scale(1.2);
 }
@@ -90,12 +90,46 @@ header{
 
 @media only screen and (max-width: 991px){
 
+  header{
+    height: 50vh;
+  }
+
   .jumbotron{
-    height: 60vh;
+    height: 100%;
   }
 
   #form-button button{
     background-color: #fff;
     border-left: 1px dashed #ff1a1a;
+  }
+
+  .head-banner{
+    padding-top: 7vh;
+  }
+
+  .head-banner .head-tagline p.head-banner-p{
+    font-size: 1rem;
+    color: #102a56;
+    text-align: center;
+  }
+
+  .main-content-tagline{
+    height: 40vh;
+  }
+
+/*  .main-content-tagline > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }*/
+
+  .main-content-tagline > div > h2{
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .down-scroll .btn:hover{
+    transform: scale(1.5);
   }
 }
