@@ -45,6 +45,7 @@ header{
 
 /*****MAIN CONTENT****/
 
+/***Landing View**/
 .main-content-tagline{
   height: 20vh;
 }
@@ -72,20 +73,33 @@ header{
   }
 }
 
-.main-content-tagline > div > a span{
+.down-scroll .btn{
   margin-left: 5vw;
   font-size: 5rem;
   color: #ffcdb2;
+  transition: transform 0.3s;
 }
 
-.down-scroll .btn{
-  transition: transform 0.3s linear;
+.down-scroll .btn:active{
+  color: #b5838d;
+  transform: scale(0.7);
 }
+/***End of Landing View**/
 
-.down-scroll .btn:hover{
-  color: #ffcdb2;
-  transform: scale(1.2);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 991px){
@@ -117,19 +131,17 @@ header{
     height: 40vh;
   }
 
-/*  .main-content-tagline > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }*/
-
   .main-content-tagline > div > h2{
     font-size: 2rem;
     line-height: 50px;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 992px){
 
   .down-scroll .btn:hover{
-    transform: scale(1.5);
+    color: #b5838d;
   }
+
 }

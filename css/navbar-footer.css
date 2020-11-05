@@ -200,7 +200,7 @@ ul.footer-links a li{
   font-family: 'Roboto', cursive;
   font-weight: 300;
   padding-bottom: 2vh;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out;
 }
 
 ul.footer-links a li:hover{
@@ -217,6 +217,18 @@ ul.footer-links a li:hover{
 
 
 /***MEDIA QUERIES***/
+
+@media screen and (max-width: 991px){
+
+  a.nav-link{
+    transition: all 0.2s ease-out;
+  }
+
+  a.nav-link:active{
+    color: #ff1a1a;
+    margin-left: 10px;
+  }
+}
 
 @media screen and (min-width: 992px){
   .navbar-nav{
