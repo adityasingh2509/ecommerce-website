@@ -57,12 +57,10 @@ a.navbar-brand {
 /*NAVIGATION LIST ITEMS*/
 a.nav-link{
   color: #262626 !important;
-  transition: all 0.2s;
 }
 
 a.nav-link:hover{
   color: #ff1a1a !important;
-  transform: scale(1.2);
 }
 
 .navbar-light .navbar-nav .active>.nav-link{
@@ -223,5 +221,14 @@ ul.footer-links a li:hover{
 @media screen and (min-width: 992px){
   .navbar-nav{
     padding-left: 5vw;
+  }
+
+  a.nav-link{
+    transition: all 0.2s;
+  }
+
+  a.nav-link:hover{
+    color: #ff1a1a !important;
+    transform: scale(1.2);
   }
 }
